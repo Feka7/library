@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Library from './Library'
+import 'react-bulma-components/dist/react-bulma-components.min.css';
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <Library />
       </header>
     </div>
   );
