@@ -24,7 +24,7 @@ class Library extends React.Component {
       error: null,
       isLoaded: false,
       items: [],
-      api_key: "AIzaSyB_QCE1mKDbbtRTXsLmeZvsOHN0ozURJqA",
+      api_key: "Inserisci la tua chiave",
       no_image: "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg",
       words: this.props.word,
       orderBy: this.props.order
@@ -50,7 +50,7 @@ class Library extends React.Component {
           this.setState({
             isLoaded: true,
             items: [],
-            words: ""
+            words: "react"
           });
         }
         },

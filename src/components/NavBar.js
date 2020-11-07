@@ -62,8 +62,8 @@ function NavBar() {
     <AppBar position="static">
       <Toolbar>
       <Box display={{ xs: 'block', md: 'none' }}>
-      <IconButton edge="start" color="inherit" aria-label="menu">
-            <MenuIcon onClick={handleClick}/>
+      <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleClick}>
+            <MenuIcon />
       </IconButton>
       <Drawer
             variant="temporary"
