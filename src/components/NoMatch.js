@@ -1,4 +1,5 @@
 import React from 'react'
+//classe utilizzata quando la ricerca non da nessun risultato
 
 function NoMatch() {
   return(

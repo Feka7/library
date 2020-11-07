@@ -38,13 +38,7 @@ const useStyles = makeStyles({
 
 const useStylesTheme = makeStyles((theme) => ({
   logo: {
-    width: '100%',
-    [theme.breakpoints.down('sm')]: {
-      textAlign: "left",
-    },
-    [theme.breakpoints.up('md')]: {
-      textAlign: "center",
-    },
+    textAlign: "left"
   },
 }));
 
@@ -97,37 +91,39 @@ function NavBar() {
             </List>
       </Drawer>
       </Box>
-      <Box p={1} display={{ xs: 'none', md: 'block' }}>
-            <Typography variant="h6">
-              <Link to="/Home" className={classes.titleBar}>
-               Home
-              </Link>
-            </Typography>
-        </Box>
-        <Box p={1} display={{ xs: 'none', md: 'block' }}>
-            <Typography variant="h6">
-                  <Link to="/Latest" className={classes.titleBar}>
-                   Latest
-                  </Link>
-            </Typography>
-        </Box>
         <Box p={1} className={classesTheme.logo}>
           <img src="https://bulma.io/images/bulma-logo.png" className={classes.responsive}/>
         </Box>
+        <Box width="60%" style={{textAlign: 'center'}} display={{ xs: 'none', md: 'block'}}>
+        <Box display="flex" justifyContent="center">
+        <Box p={1}>
+              <Typography variant="body1">
+                <Link to="/Home" className={classes.titleBar}>
+                 HOME
+                </Link>
+              </Typography>
+          </Box>
+          <Box p={1}>
+              <Typography variant="body1">
+                    <Link to="/Latest" className={classes.titleBar}>
+                     ULTIMI ARRIVI
+                    </Link>
+              </Typography>
+          </Box>
       <Box p={1}>
-      <Typography variant="h6">
-        <Link to="/Home" className={classes.titleBar}>
-         Login
+      <Typography variant="body1">
+        <Link to="/Best" className={classes.titleBar}>
+         PREFERITI
         </Link>
       </Typography>
-        </Box>
-        <Box p={1}>
-        <Typography variant="h6">
-          <Link to="/Home" className={classes.titleBar}>
-           Registrati
-          </Link>
-        </Typography>
-          </Box>
+      </Box>
+      <Box p={1}>
+      <Typography variant="body1" >
+         LISTA DESIDERI
+      </Typography>
+      </Box>
+      </Box>
+      </Box>
       </Toolbar>
     </AppBar>
 
